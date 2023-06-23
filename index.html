@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego MiQuiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    
+    <!-- TODO: Agregar SDKs para los productos Firebase que quieras usar
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // Configuración Firebase de tu aplicación web
+      var firebaseConfig = {
+  apiKey: "AIzaSyAi0ltWNT0ahu8pTN3cIicOaVFJabdq2XY",
+  authDomain: "formulario-cee40.firebaseapp.com",
+  databaseURL: "https://formulario-cee40-default-rtdb.firebaseio.com",
+  projectId: "formulario-cee40",
+  storageBucket: "formulario-cee40.appspot.com",
+  messagingSenderId: "236128343955",
+  appId: "1:236128343955:web:453825a9903645c9b03a66"
+};
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+        
+
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
